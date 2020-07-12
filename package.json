@@ -1,7 +1,7 @@
 {
-  "name": "akedari-health-tracker",
+  "name": "akedari-dummy-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "UI apps",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
