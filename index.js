@@ -9,17 +9,21 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static(publicPath));
 
-app.get('/health-app', (req, res) => {
-   res.sendFile(path.join(publicPathHealthApp, 'index.html'));
+app.get('/', (req, res) => {
+   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
-app.get('/stock-tracker-app', (req, res) => {
-   res.sendFile(path.join(publicPathStockTrackerApp, 'index.html'));
-});
+// app.get('/health-app', (req, res) => {
+//    res.sendFile(path.join(publicPathHealthApp, 'index.html'));
+// });
 
-app.get('/true-blogger-app', (req, res) => {
-   res.sendFile(path.join(publicPathStockTrackerApp, 'index.html'));
-});
+// app.get('/stock-tracker-app', (req, res) => {
+//    res.sendFile(path.join(publicPathStockTrackerApp, 'index.html'));
+// });
+
+// app.get('/true-blogger-app', (req, res) => {
+//    res.sendFile(path.join(publicPathStockTrackerApp, 'index.html'));
+// });
 
 app.listen(port, (req, res) => {
    console.log('Server is up! on, '+ port);
